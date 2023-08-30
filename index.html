@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tic Tac Toe</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="index.js
+    "
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- New game menu start -->
+    <div class="container" id="new-game-container">
+      <img src=".//assets/logo.svg" alt="logo" />
+      <div>
+        <p>PICK PLAYER 1'S MARK</p>
+        <div id="icon-selector-div">
+          <div id="icon-selector-img1">
+            <img id="x-btn" src="./assets/icon-x-outline.svg" alt="x-button" />
+          </div>
+          <div id="icon-selector-img2">
+            <img id="o-btn" src="./assets/icon-o-outline.svg" alt="o-button" />
+          </div>
+        </div>
+        <p>REMEMBER: X GOES FIRST</p>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto" id="player-selector">
+        <button
+          type="button"
+          id="new-game-cpu"
+          class="game-mode btn btn-warning"
+        >
+          NEW GAME (vs CPU)
+        </button>
+        <button
+          type="button"
+          id="new-game-player"
+          class="game-mode btn btn-info"
+        >
+          NEW GAME (vs PLAYER)
+        </button>
+      </div>
+    </div>
+    <!-- New game menu end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

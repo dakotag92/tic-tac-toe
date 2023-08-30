@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.815);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+p {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.container {
+  color: white;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25%;
+}
+.container div > p:first-of-type {
+  margin-top: 5px;
+  color: rgb(230, 232, 235);
+}
+.container div > p:nth-of-type(2) {
+  font-weight: 700;
+  color: rgb(88, 88, 88);
+}
+#icon-selector-div img {
+  width: 50%;
+  margin: 10px 0;
+}
+#icon-selector-div div {
+  text-align: center;
+}
+
+#icon-selector-img1 {
+  border-radius: 10px;
+
+  height: 90%;
+}
+#icon-selector-img2 {
+  border-radius: 10px;
+
+  height: 90%;
+}
+
+#icon-selector-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+#icon-selector-div {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  justify-content: space-around;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+}
+
+#player-selector {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+}
+#player-selector > button:first-of-type {
+  border-radius: 10px;
+  background: linear-gradient(to bottom, gold, gold 80%, rgba(0, 0, 0, 0.1));
+}
+.xo-icons {
+  background-color: rgba(0, 0, 0, 0.815);
+}
+
+#player-selector > button:nth-of-type(2) {
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    #17a2b8,
+    #17a2b8 80%,
+    rgba(0, 0, 0, 0.1)
+  );
+}
+#new-game-container > div:first-of-type {
+  background-color: gray;
+  border-radius: 10px;
+  width: 18em;
+  margin: 20px 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+.button-active {
+  background-color: rgb(230, 232, 235);
+}
